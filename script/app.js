@@ -1,5 +1,4 @@
-// get game elements
-let computerImage = document.querySelector("#computerImage");
+// get winner element
 let winner = document.querySelector("#winner");
 
 // get button elements
@@ -33,16 +32,10 @@ function play(playerChoice) {
 function updateVisuals(p, c, w) {
     winner.textContent = w + "!";
     console.log("test");
-    if(p == "rock")
-        document.getElementById("playerImage").src = "./resources/rock.png";
-    if(p == "paper")
-        document.getElementById("playerImage").src = "./resources/paper.png";
-    if(p == "scissors")
-        document.getElementById("playerImage").src = "./resources/scissors.png";
-    if(c == "rock")
-        document.getElementById("computerImage").src = "./resources/rock.png";
-    if(c == "paper")
-        document.getElementById("computerImage").src = "./resources/paper.png";
-    if(c == "scissors")
-        document.getElementById("computerImage").src = "./resources/scissors.png";
+    if(p == "rock") document.getElementById("playerImage").src = "./resources/rock.png";
+    if(p == "paper") document.getElementById("playerImage").src = "./resources/paper.png";
+    if(p == "scissors") document.getElementById("playerImage").src = "./resources/scissors.png";
+    if(c == "rock") document.getElementById("computerImage").src = "./resources/rock.png";
+    if(c == "paper") document.getElementById("computerImage").src = "./resources/paper.png";
+    if(c == "scissors") document.getElementById("computerImage").src = "./resources/scissors.png";
 }
